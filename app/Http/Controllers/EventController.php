@@ -15,17 +15,9 @@ class EventController extends Controller
     /**
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
-    public function index()
-    {
-        return view('event/list', ['events' => Event::orderBy('start_time')->get()]);
-    }
-
-    /**
-     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
-     */
     public function create()
     {
-        return view('event/create');
+        return view('booking.create');
     }
 
     /**
